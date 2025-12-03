@@ -9,7 +9,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 }
 
 // Database connection
-$mysqli = new mysqli("localhost", "root", "", "kopi_shop");
+$mysqli = new mysqli("sql100.infinityfree.com", "if0_40584912", "kopishop28", "if0_40584912_kopi_shop");
 
 // Check connection
 if ($mysqli->connect_error) {
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 // Database connection
-$mysqli = new mysqli("localhost", "root", "", "kopi_shop");
+$mysqli = new mysqli("sql100.infinityfree.com", "if0_40584912", "kopishop28", "if0_40584912_kopi_shop");
 
 // Check connection
 if ($mysqli->connect_error) {
